@@ -21,10 +21,18 @@
         .pri_btn{
             background-color: #FF4240;
         }
+        .inn a{
+          display: block;
+        }
+        .inn{
+          display: flex;
+          justify-content: space-around;
+          width: 90%;
+        }
     </style>
 </head>
 
-<body class="pri_font">
+<body class="pri_font p-2">
     <header class="container mx-auto">
         <!-- navbar section -->
         <div class="navbar my-10">
@@ -501,7 +509,7 @@
         <hr class="my-14 border-dashed w-full container mx-auto">
 
         <!-- get in touch section -->
-        <section>
+        <section class="p-2">
             <div class="">
                 <h1 class="text-4xl text-center font-extrabold mb-6">
                     Get In Touch
@@ -575,7 +583,7 @@
                     </div>
                 </div>
                 <!-- social -->
-                <div class="mt-14 bg-[#13131805] p-6 rounded-xl py-10">
+                <div class="mt-14 bg-[#c2c2c23b] p-6 rounded-xl py-10">
                     <h1 class="text-4xl text-center font-extrabold mb-6">
                         Social Media
                     </h1>
@@ -600,19 +608,50 @@
 
     </main>
 
-    <footer>
-        <h1 class="text-3xl font-extrabold">
+      <footer class="footer p-10 text-center md:text-left lg:text-left bg-[#131318] text-white">
+        <div class="flex mx-auto">
+          <div class="">            
+          <h1 class="text-3xl font-extrabold mb-4">
             Get In Touch
         </h1>
-        <p>Get in touch with us<br/>We are always available.</p>    
-    </footer>
-    <footer class="">
-            <div class="">
-                <h1 class="text-3xl font-extrabold">
-                    Get In Touch
-                </h1>
-                <p>Get in touch with us<br/>We are always available.</p>    
-            </div>
+        <p class="mb-5">Get in touch with us<br/>We are always available.</p>   
+        <span class="">
+          <i class="fa-solid fa-envelope-open" style="color: #ff007b;"></i>
+          hockeys@support.com
+        </span><br><br>
+        <span>
+          <i class="fa-solid fa-phone-flip" style="color: #ff004c;"></i>
+          (+62) 123-321-543
+        </span>
+          </div>
+        </div>
+        <div class="inn">
+          <nav>
+            <header class="footer-title mb-7">Company</header> 
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Leadership</a>
+            <a class="link link-hover">Careers</a>
+            <a class="link link-hover">News & Articlet</a>
+            <a class="link link-hover">Legal Notice</a>
+          </nav> 
+          <nav>
+            <header class="footer-title mb-7">Support</header> 
+            <a class="link link-hover">Help Center</a>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Ticket Suppor</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav> 
+        </div>
+        <nav class="flex mx-auto">
+          <div class="text-center md:text-left lg:text-left">
+            <header class="footer-title mb-7">Services</header> 
+          <a class="link link-hover block">Academy</a>
+          <a class="link link-hover block">Group Lesson</a>
+          <a class="link link-hover block">Private Lesson</a>
+          <a class="link link-hover block">Hockeys for kids</a>
+          <a class="link link-hover block">Hockeys for Adult</a>
+          </div>
+        </nav>
       </footer>
 </body>
 
